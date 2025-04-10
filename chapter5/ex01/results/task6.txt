@@ -1,0 +1,27 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 6:** Find the ID, first name, and last name of each customer for which an invoice was not created on **November 15, 2021**
+Reason: Expected:
++---------+------------+-----------+
+| CUST_ID | FIRST_NAME | LAST_NAME |
++---------+------------+-----------+
+|   294   |  Samantha  |   Smith   |
+|   182   |   Billy    |  Rufton   |
+|   435   |   James    | Gonzalez  |
+|   125   |    Joey    |   Smith   |
+|   435   |   James    | Gonzalez  |
+|   616   |   Sally    |   Cruz    |
++---------+------------+-----------+
+Found:
++---------+------------+-----------+
+| CUST_ID | FIRST_NAME | LAST_NAME |
++---------+------------+-----------+
+|   294   |  Samantha  |   Smith   |
+|   182   |   Billy    |  Rufton   |
+|   435   |   James    | Gonzalez  |
+|   125   |    Joey    |   Smith   |
+|   616   |   Sally    |   Cruz    |
++---------+------------+-----------+
+Error : AssertionError - 
+Timestamp: 2025-04-10 17:17:42.136031
