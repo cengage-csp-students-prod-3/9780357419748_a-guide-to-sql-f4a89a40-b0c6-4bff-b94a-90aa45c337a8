@@ -17,7 +17,9 @@ Found:
 +---------+------------+------------+
 | CUST_ID | FIRST_NAME | LAST_NAME  |
 +---------+------------+------------+
+|   125   |    Joey    |   Smith    |
 |   182   |   Billy    |   Rufton   |
+|   227   |   Sandra   |  Pincher   |
 |   294   |  Samantha  |   Smith    |
 |   314   |    Tom     |   Rascal   |
 |   375   |  Melanie   |  Jackson   |
@@ -29,4 +31,4 @@ Found:
 |   795   |   Randy    | Blacksmith |
 +---------+------------+------------+
 Error : AssertionError - 
-Timestamp: 2025-04-10 17:19:13.672424
+Timestamp: 2025-04-10 17:23:32.531532
