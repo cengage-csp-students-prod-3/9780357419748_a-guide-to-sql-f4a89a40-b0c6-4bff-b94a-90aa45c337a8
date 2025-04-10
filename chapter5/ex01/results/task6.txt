@@ -14,19 +14,17 @@ Reason: Expected:
 |   616   |   Sally    |   Cruz    |
 +---------+------------+-----------+
 Found:
-+---------+------------+------------+
-| CUST_ID | FIRST_NAME | LAST_NAME  |
-+---------+------------+------------+
-|   182   |   Billy    |   Rufton   |
-|   294   |  Samantha  |   Smith    |
-|   314   |    Tom     |   Rascal   |
-|   375   |  Melanie   |  Jackson   |
-|   435   |   James    |  Gonzalez  |
-|   492   |   Elmer    |  Jackson   |
-|   543   |   Angie    | Hendricks  |
-|   616   |   Sally    |    Cruz    |
-|   721   |   Leslie   |   Smith    |
-|   795   |   Randy    | Blacksmith |
-+---------+------------+------------+
++---------+------------+-----------+
+| CUST_ID | FIRST_NAME | LAST_NAME |
++---------+------------+-----------+
+|   125   |    Joey    |   Smith   |
+|   227   |   Sandra   |  Pincher  |
+|   294   |  Samantha  |   Smith   |
+|   182   |   Billy    |  Rufton   |
+|   435   |   James    | Gonzalez  |
+|   125   |    Joey    |   Smith   |
+|   435   |   James    | Gonzalez  |
+|   616   |   Sally    |   Cruz    |
++---------+------------+-----------+
 Error : AssertionError - 
-Timestamp: 2025-04-10 17:25:58.042180
+Timestamp: 2025-04-10 17:55:24.102899
