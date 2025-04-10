@@ -1,0 +1,42 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 4:** Use the `IN` operator to find the ID, first name, and last name of each customer for which as invoice was created on **November 15, 2021**
+Reason: Expected:
++---------+------------+-----------+
+| CUST_ID | FIRST_NAME | LAST_NAME |
++---------+------------+-----------+
+|   125   |    Joey    |   Smith   |
+|   227   |   Sandra   |  Pincher  |
++---------+------------+-----------+
+Found:
++---------+------------+------------+
+| CUST_ID | FIRST_NAME | LAST_NAME  |
++---------+------------+------------+
+|   125   |    Joey    |   Smith    |
+|   125   |    Joey    |   Smith    |
+|   182   |   Billy    |   Rufton   |
+|   182   |   Billy    |   Rufton   |
+|   227   |   Sandra   |  Pincher   |
+|   227   |   Sandra   |  Pincher   |
+|   294   |  Samantha  |   Smith    |
+|   294   |  Samantha  |   Smith    |
+|   314   |    Tom     |   Rascal   |
+|   314   |    Tom     |   Rascal   |
+|   375   |  Melanie   |  Jackson   |
+|   375   |  Melanie   |  Jackson   |
+|   435   |   James    |  Gonzalez  |
+|   435   |   James    |  Gonzalez  |
+|   492   |   Elmer    |  Jackson   |
+|   492   |   Elmer    |  Jackson   |
+|   543   |   Angie    | Hendricks  |
+|   543   |   Angie    | Hendricks  |
+|   616   |   Sally    |    Cruz    |
+|   616   |   Sally    |    Cruz    |
+|   721   |   Leslie   |   Smith    |
+|   721   |   Leslie   |   Smith    |
+|   795   |   Randy    | Blacksmith |
+|   795   |   Randy    | Blacksmith |
++---------+------------+------------+
+Error : AssertionError - 
+Timestamp: 2025-04-10 16:56:02.505270
