@@ -1,0 +1,40 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 8:** Repeat *Task 7*, but this time order the rows by category and then by invoice number
+Reason: Expected:
++-------------+--------------+---------+-----------------------------+----------+
+| INVOICE_NUM | INVOICE_DATE | ITEM_ID |         DESCRIPTION         | CATEGORY |
++-------------+--------------+---------+-----------------------------+----------+
+|    14224    |  2021-11-16  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14233    |  2021-11-18  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14216    |  2021-11-15  |  CA75   | Enclosed Cat Litter Station |   CAT    |
+|    14219    |  2021-11-15  |  AD72   |     Dog Feeding Station     |   DOG    |
+|    14219    |  2021-11-15  |  DT12   |      Dog Toy Gift Set       |   DOG    |
+|    14222    |  2021-11-16  |  LD14   |   Locking Small Dog Door    |   DOG    |
+|    14231    |  2021-11-18  |  UF39   |  Underground Fence System   |   DOG    |
+|    14237    |  2021-11-19  |  LP73   |      Large Pet Carrier      |   DOG    |
+|    14228    |  2021-11-18  |  FS42   |    Aquarium (55 Gallon)     |   FSH    |
+|    14228    |  2021-11-18  |  PF19   |      Pump & Filter Kit      |   FSH    |
+|    14233    |  2021-11-18  |  QB92   |   Quilted Stable Blanket    |   HOR    |
+|    14233    |  2021-11-18  |  WB49   |   Insulated Water Bucket    |   HOR    |
++-------------+--------------+---------+-----------------------------+----------+
+Found:
++-------------+--------------+---------+-----------------------------+----------+
+| INVOICE_NUM | INVOICE_DATE | ITEM_ID |         DESCRIPTION         | CATEGORY |
++-------------+--------------+---------+-----------------------------+----------+
+|    14216    |  2021-11-15  |  CA75   | Enclosed Cat Litter Station |   CAT    |
+|    14219    |  2021-11-15  |  AD72   |     Dog Feeding Station     |   DOG    |
+|    14219    |  2021-11-15  |  DT12   |      Dog Toy Gift Set       |   DOG    |
+|    14222    |  2021-11-16  |  LD14   |   Locking Small Dog Door    |   DOG    |
+|    14224    |  2021-11-16  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14228    |  2021-11-18  |  FS42   |    Aquarium (55 Gallon)     |   FSH    |
+|    14228    |  2021-11-18  |  PF19   |      Pump & Filter Kit      |   FSH    |
+|    14231    |  2021-11-18  |  UF39   |  Underground Fence System   |   DOG    |
+|    14233    |  2021-11-18  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14233    |  2021-11-18  |  QB92   |   Quilted Stable Blanket    |   HOR    |
+|    14233    |  2021-11-18  |  WB49   |   Insulated Water Bucket    |   HOR    |
+|    14237    |  2021-11-19  |  LP73   |      Large Pet Carrier      |   DOG    |
++-------------+--------------+---------+-----------------------------+----------+
+Error : AssertionError - 
+Timestamp: 2025-04-11 17:34:42.037389
