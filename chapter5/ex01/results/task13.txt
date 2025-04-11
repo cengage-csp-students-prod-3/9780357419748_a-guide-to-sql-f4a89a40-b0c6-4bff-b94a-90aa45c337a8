@@ -1,0 +1,26 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 13:** List the invoice number and invoice date for each invoice created for the customer **James Gonzalez**
+Reason: Expected:
++-------------+--------------+
+| INVOICE_NUM | INVOICE_DATE |
++-------------+--------------+
+|    14228    |  2021-11-18  |
+|    14233    |  2021-11-18  |
++-------------+--------------+
+Found:
++-------------+--------------+
+| INVOICE_NUM | INVOICE_DATE |
++-------------+--------------+
+|    14216    |  2021-11-15  |
+|    14219    |  2021-11-15  |
+|    14222    |  2021-11-16  |
+|    14224    |  2021-11-16  |
+|    14228    |  2021-11-18  |
+|    14231    |  2021-11-18  |
+|    14233    |  2021-11-18  |
+|    14237    |  2021-11-19  |
++-------------+--------------+
+Error : AssertionError - 
+Timestamp: 2025-04-11 18:25:32.212150
