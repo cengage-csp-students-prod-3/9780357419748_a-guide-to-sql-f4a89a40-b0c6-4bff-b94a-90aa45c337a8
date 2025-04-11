@@ -1,0 +1,37 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 12:** List the item ID, description, and category for each pair of items that are in the same category
+Reason: Expected:
++----------+---------+-------------------------------+
+| CATEGORY | ITEM_ID |          DESCRIPTION          |
++----------+---------+-------------------------------+
+|   BRD    |  BC33   | Feathers Bird Cage (12x24x18) |
+|   BRD    |  KH81   |    Wild Bird Food (25 lb)     |
+|   CAT    |  CA75   |  Enclosed Cat Litter Station  |
+|   CAT    |  SP91   |       Small Pet Carrier       |
+|   FSH    |  FS42   |     Aquarium (55 Gallon)      |
+|   FSH    |  PF19   |       Pump & Filter Kit       |
++----------+---------+-------------------------------+
+Found:
++---------+-------------------------------+----------+
+| ITEM_ID |          DESCRIPTION          | CATEGORY |
++---------+-------------------------------+----------+
+|  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|  SP91   |       Small Pet Carrier       |   CAT    |
+|  AD72   |      Dog Feeding Station      |   DOG    |
+|  DT12   |       Dog Toy Gift Set        |   DOG    |
+|  LD14   |    Locking Small Dog Door     |   DOG    |
+|  LP73   |       Large Pet Carrier       |   DOG    |
+|  UF39   |   Underground Fence System    |   DOG    |
+|  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|  PF19   |       Pump & Filter Kit       |   FSH    |
+|  FM23   |      Fly Mask with Ears       |   HOR    |
+|  FS39   |     Folding Saddle Stand      |   HOR    |
+|  QB92   |    Quilted Stable Blanket     |   HOR    |
+|  WB49   |    Insulated Water Bucket     |   HOR    |
++---------+-------------------------------+----------+
+Error : AssertionError - 
+Timestamp: 2025-04-11 18:02:54.557051
