@@ -1,0 +1,148 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 7:** For each invoice, list the invoice number, invoice date, item ID, description, and category for each item that makes up the invoice
+Reason: Expected:
++-------------+--------------+---------+-----------------------------+----------+
+| INVOICE_NUM | INVOICE_DATE | ITEM_ID |         DESCRIPTION         | CATEGORY |
++-------------+--------------+---------+-----------------------------+----------+
+|    14216    |  2021-11-15  |  CA75   | Enclosed Cat Litter Station |   CAT    |
+|    14219    |  2021-11-15  |  AD72   |     Dog Feeding Station     |   DOG    |
+|    14219    |  2021-11-15  |  DT12   |      Dog Toy Gift Set       |   DOG    |
+|    14222    |  2021-11-16  |  LD14   |   Locking Small Dog Door    |   DOG    |
+|    14224    |  2021-11-16  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14228    |  2021-11-18  |  FS42   |    Aquarium (55 Gallon)     |   FSH    |
+|    14228    |  2021-11-18  |  PF19   |      Pump & Filter Kit      |   FSH    |
+|    14231    |  2021-11-18  |  UF39   |  Underground Fence System   |   DOG    |
+|    14233    |  2021-11-18  |  KH81   |   Wild Bird Food (25 lb)    |   BRD    |
+|    14233    |  2021-11-18  |  QB92   |   Quilted Stable Blanket    |   HOR    |
+|    14233    |  2021-11-18  |  WB49   |   Insulated Water Bucket    |   HOR    |
+|    14237    |  2021-11-19  |  LP73   |      Large Pet Carrier      |   DOG    |
++-------------+--------------+---------+-----------------------------+----------+
+Found:
++-------------+--------------+---------+-------------------------------+----------+
+| INVOICE_NUM | INVOICE_DATE | ITEM_ID |          DESCRIPTION          | CATEGORY |
++-------------+--------------+---------+-------------------------------+----------+
+|    14216    |  2021-11-15  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14216    |  2021-11-15  |  UF39   |   Underground Fence System    |   DOG    |
+|    14216    |  2021-11-15  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14216    |  2021-11-15  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14216    |  2021-11-15  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14216    |  2021-11-15  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14216    |  2021-11-15  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14216    |  2021-11-15  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14216    |  2021-11-15  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14216    |  2021-11-15  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14216    |  2021-11-15  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14216    |  2021-11-15  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14216    |  2021-11-15  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14216    |  2021-11-15  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14216    |  2021-11-15  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14219    |  2021-11-15  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14219    |  2021-11-15  |  UF39   |   Underground Fence System    |   DOG    |
+|    14219    |  2021-11-15  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14219    |  2021-11-15  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14219    |  2021-11-15  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14219    |  2021-11-15  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14219    |  2021-11-15  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14219    |  2021-11-15  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14219    |  2021-11-15  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14219    |  2021-11-15  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14219    |  2021-11-15  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14219    |  2021-11-15  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14219    |  2021-11-15  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14219    |  2021-11-15  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14219    |  2021-11-15  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14222    |  2021-11-16  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14222    |  2021-11-16  |  UF39   |   Underground Fence System    |   DOG    |
+|    14222    |  2021-11-16  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14222    |  2021-11-16  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14222    |  2021-11-16  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14222    |  2021-11-16  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14222    |  2021-11-16  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14222    |  2021-11-16  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14222    |  2021-11-16  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14222    |  2021-11-16  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14222    |  2021-11-16  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14222    |  2021-11-16  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14222    |  2021-11-16  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14222    |  2021-11-16  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14222    |  2021-11-16  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14224    |  2021-11-16  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14224    |  2021-11-16  |  UF39   |   Underground Fence System    |   DOG    |
+|    14224    |  2021-11-16  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14224    |  2021-11-16  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14224    |  2021-11-16  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14224    |  2021-11-16  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14224    |  2021-11-16  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14224    |  2021-11-16  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14224    |  2021-11-16  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14224    |  2021-11-16  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14224    |  2021-11-16  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14224    |  2021-11-16  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14224    |  2021-11-16  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14224    |  2021-11-16  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14224    |  2021-11-16  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14228    |  2021-11-18  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14228    |  2021-11-18  |  UF39   |   Underground Fence System    |   DOG    |
+|    14228    |  2021-11-18  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14228    |  2021-11-18  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14228    |  2021-11-18  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14228    |  2021-11-18  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14228    |  2021-11-18  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14228    |  2021-11-18  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14228    |  2021-11-18  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14228    |  2021-11-18  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14228    |  2021-11-18  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14228    |  2021-11-18  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14228    |  2021-11-18  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14228    |  2021-11-18  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14228    |  2021-11-18  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14231    |  2021-11-18  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14231    |  2021-11-18  |  UF39   |   Underground Fence System    |   DOG    |
+|    14231    |  2021-11-18  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14231    |  2021-11-18  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14231    |  2021-11-18  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14231    |  2021-11-18  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14231    |  2021-11-18  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14231    |  2021-11-18  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14231    |  2021-11-18  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14231    |  2021-11-18  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14231    |  2021-11-18  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14231    |  2021-11-18  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14231    |  2021-11-18  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14231    |  2021-11-18  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14231    |  2021-11-18  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14233    |  2021-11-18  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14233    |  2021-11-18  |  UF39   |   Underground Fence System    |   DOG    |
+|    14233    |  2021-11-18  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14233    |  2021-11-18  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14233    |  2021-11-18  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14233    |  2021-11-18  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14233    |  2021-11-18  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14233    |  2021-11-18  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14233    |  2021-11-18  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14233    |  2021-11-18  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14233    |  2021-11-18  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14233    |  2021-11-18  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14233    |  2021-11-18  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14233    |  2021-11-18  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14233    |  2021-11-18  |  AD72   |      Dog Feeding Station      |   DOG    |
+|    14237    |  2021-11-19  |  WB49   |    Insulated Water Bucket     |   HOR    |
+|    14237    |  2021-11-19  |  UF39   |   Underground Fence System    |   DOG    |
+|    14237    |  2021-11-19  |  SP91   |       Small Pet Carrier       |   CAT    |
+|    14237    |  2021-11-19  |  QB92   |    Quilted Stable Blanket     |   HOR    |
+|    14237    |  2021-11-19  |  PF19   |       Pump & Filter Kit       |   FSH    |
+|    14237    |  2021-11-19  |  LP73   |       Large Pet Carrier       |   DOG    |
+|    14237    |  2021-11-19  |  LD14   |    Locking Small Dog Door     |   DOG    |
+|    14237    |  2021-11-19  |  KH81   |    Wild Bird Food (25 lb)     |   BRD    |
+|    14237    |  2021-11-19  |  FS42   |     Aquarium (55 Gallon)      |   FSH    |
+|    14237    |  2021-11-19  |  FS39   |     Folding Saddle Stand      |   HOR    |
+|    14237    |  2021-11-19  |  FM23   |      Fly Mask with Ears       |   HOR    |
+|    14237    |  2021-11-19  |  DT12   |       Dog Toy Gift Set        |   DOG    |
+|    14237    |  2021-11-19  |  CA75   |  Enclosed Cat Litter Station  |   CAT    |
+|    14237    |  2021-11-19  |  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
+|    14237    |  2021-11-19  |  AD72   |      Dog Feeding Station      |   DOG    |
++-------------+--------------+---------+-------------------------------+----------+
+Error : AssertionError - 
+Timestamp: 2025-04-11 17:22:06.951162
