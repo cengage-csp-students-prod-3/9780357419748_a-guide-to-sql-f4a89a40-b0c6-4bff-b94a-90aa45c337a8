@@ -17,25 +17,20 @@ Reason: Expected:
 |  WB49   |    Insulated Water Bucket     | 79.99  |   HOR    |
 +---------+-------------------------------+--------+----------+
 Found:
-+---------+-------------------------------+---------+-------------+----------+
-| ITEM_ID |          DESCRIPTION          | ON_HAND | INVOICE_NUM | QUANTITY |
-+---------+-------------------------------+---------+-------------+----------+
-|  AD72   |      Dog Feeding Station      |   12    |    14219    |    2     |
-|  BC33   | Feathers Bird Cage (12x24x18) |   10    |    NULL     |   NULL   |
-|  CA75   |  Enclosed Cat Litter Station  |   15    |    14216    |    3     |
-|  DT12   |       Dog Toy Gift Set        |   27    |    14219    |    4     |
-|  FM23   |      Fly Mask with Ears       |   41    |    NULL     |   NULL   |
-|  FS39   |     Folding Saddle Stand      |   12    |    NULL     |   NULL   |
-|  FS42   |     Aquarium (55 Gallon)      |    5    |    14228    |    1     |
-|  KH81   |    Wild Bird Food (25 lb)     |   24    |    14233    |    1     |
-|  KH81   |    Wild Bird Food (25 lb)     |   24    |    14224    |    4     |
-|  LD14   |    Locking Small Dog Door     |   14    |    14222    |    1     |
-|  LP73   |       Large Pet Carrier       |   23    |    14237    |    3     |
-|  PF19   |       Pump & Filter Kit       |    5    |    14228    |    1     |
-|  QB92   |    Quilted Stable Blanket     |   32    |    14233    |    4     |
-|  SP91   |       Small Pet Carrier       |   18    |    NULL     |   NULL   |
-|  UF39   |   Underground Fence System    |    7    |    14231    |    2     |
-|  WB49   |    Insulated Water Bucket     |   34    |    14233    |    4     |
-+---------+-------------------------------+---------+-------------+----------+
++---------+-----------------------------+---------+
+| ITEM_ID |         DESCRIPTION         | ON_HAND |
++---------+-----------------------------+---------+
+|  AD72   |     Dog Feeding Station     |   12    |
+|  CA75   | Enclosed Cat Litter Station |   15    |
+|  DT12   |      Dog Toy Gift Set       |   27    |
+|  FS42   |    Aquarium (55 Gallon)     |    5    |
+|  KH81   |   Wild Bird Food (25 lb)    |   24    |
+|  LD14   |   Locking Small Dog Door    |   14    |
+|  LP73   |      Large Pet Carrier      |   23    |
+|  PF19   |      Pump & Filter Kit      |    5    |
+|  QB92   |   Quilted Stable Blanket    |   32    |
+|  UF39   |  Underground Fence System   |    7    |
+|  WB49   |   Insulated Water Bucket    |   34    |
++---------+-----------------------------+---------+
 Error : AssertionError - 
-Timestamp: 2025-04-11 23:26:31.154726
+Timestamp: 2025-04-11 23:28:05.553480
