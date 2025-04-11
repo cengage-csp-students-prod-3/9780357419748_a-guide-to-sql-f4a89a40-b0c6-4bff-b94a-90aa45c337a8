@@ -17,20 +17,20 @@ Reason: Expected:
 |  WB49   |    Insulated Water Bucket     | 79.99  |   HOR    |
 +---------+-------------------------------+--------+----------+
 Found:
-+---------+-----------------------------+---------+
-| ITEM_ID |         DESCRIPTION         | ON_HAND |
-+---------+-----------------------------+---------+
-|  AD72   |     Dog Feeding Station     |   12    |
-|  CA75   | Enclosed Cat Litter Station |   15    |
-|  DT12   |      Dog Toy Gift Set       |   27    |
-|  FS42   |    Aquarium (55 Gallon)     |    5    |
-|  KH81   |   Wild Bird Food (25 lb)    |   24    |
-|  LD14   |   Locking Small Dog Door    |   14    |
-|  LP73   |      Large Pet Carrier      |   23    |
-|  PF19   |      Pump & Filter Kit      |    5    |
-|  QB92   |   Quilted Stable Blanket    |   32    |
-|  UF39   |  Underground Fence System   |    7    |
-|  WB49   |   Insulated Water Bucket    |   34    |
-+---------+-----------------------------+---------+
++---------+-----------------------------+--------+
+| ITEM_ID |         DESCRIPTION         | PRICE  |
++---------+-----------------------------+--------+
+|  AD72   |     Dog Feeding Station     | 79.99  |
+|  CA75   | Enclosed Cat Litter Station | 39.99  |
+|  DT12   |      Dog Toy Gift Set       | 39.99  |
+|  FS42   |    Aquarium (55 Gallon)     | 124.99 |
+|  KH81   |   Wild Bird Food (25 lb)    | 19.99  |
+|  LD14   |   Locking Small Dog Door    | 49.99  |
+|  LP73   |      Large Pet Carrier      | 59.99  |
+|  PF19   |      Pump & Filter Kit      | 74.99  |
+|  QB92   |   Quilted Stable Blanket    | 119.99 |
+|  UF39   |  Underground Fence System   | 199.99 |
+|  WB49   |   Insulated Water Bucket    | 79.99  |
++---------+-----------------------------+--------+
 Error : AssertionError - 
-Timestamp: 2025-04-11 23:28:05.553480
+Timestamp: 2025-04-11 23:28:45.843483
