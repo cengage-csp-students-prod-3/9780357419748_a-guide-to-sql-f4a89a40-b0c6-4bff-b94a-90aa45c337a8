@@ -17,23 +17,20 @@ Reason: Expected:
 |  WB49   |    Insulated Water Bucket     | 79.99  |   HOR    |
 +---------+-------------------------------+--------+----------+
 Found:
-+---------+-------------------------------+--------+----------+
-| ITEM_ID |          DESCRIPTION          | PRICE  | CATEGORY |
-+---------+-------------------------------+--------+----------+
-|  AD72   |      Dog Feeding Station      | 79.99  |   DOG    |
-|  BC33   | Feathers Bird Cage (12x24x18) | 79.99  |   BRD    |
-|  CA75   |  Enclosed Cat Litter Station  | 39.99  |   CAT    |
-|  DT12   |       Dog Toy Gift Set        | 39.99  |   DOG    |
-|  FM23   |      Fly Mask with Ears       | 24.95  |   HOR    |
-|  FS39   |     Folding Saddle Stand      | 39.99  |   HOR    |
-|  FS42   |     Aquarium (55 Gallon)      | 124.99 |   FSH    |
-|  KH81   |    Wild Bird Food (25 lb)     | 19.99  |   BRD    |
-|  LD14   |    Locking Small Dog Door     | 49.99  |   DOG    |
-|  LP73   |       Large Pet Carrier       | 59.99  |   DOG    |
-|  PF19   |       Pump & Filter Kit       | 74.99  |   FSH    |
-|  QB92   |    Quilted Stable Blanket     | 119.99 |   HOR    |
-|  SP91   |       Small Pet Carrier       | 39.99  |   CAT    |
-|  UF39   |   Underground Fence System    | 199.99 |   DOG    |
-+---------+-------------------------------+--------+----------+
++---------+-----------------------------+--------+----------+
+| ITEM_ID |         DESCRIPTION         | PRICE  | CATEGORY |
++---------+-----------------------------+--------+----------+
+|  AD72   |     Dog Feeding Station     | 79.99  |   DOG    |
+|  CA75   | Enclosed Cat Litter Station | 39.99  |   CAT    |
+|  DT12   |      Dog Toy Gift Set       | 39.99  |   DOG    |
+|  FS42   |    Aquarium (55 Gallon)     | 124.99 |   FSH    |
+|  KH81   |   Wild Bird Food (25 lb)    | 19.99  |   BRD    |
+|  LD14   |   Locking Small Dog Door    | 49.99  |   DOG    |
+|  LP73   |      Large Pet Carrier      | 59.99  |   DOG    |
+|  PF19   |      Pump & Filter Kit      | 74.99  |   FSH    |
+|  QB92   |   Quilted Stable Blanket    | 119.99 |   HOR    |
+|  UF39   |  Underground Fence System   | 199.99 |   DOG    |
+|  WB49   |   Insulated Water Bucket    | 79.99  |   HOR    |
++---------+-----------------------------+--------+----------+
 Error : AssertionError - 
-Timestamp: 2025-04-11 23:34:54.428657
+Timestamp: 2025-04-11 23:35:37.392485
