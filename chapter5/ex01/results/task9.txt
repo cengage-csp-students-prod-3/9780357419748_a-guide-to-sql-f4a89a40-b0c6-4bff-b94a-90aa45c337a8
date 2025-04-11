@@ -1,0 +1,25 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 9:** Use a subquery to find the sales rep ID, first name, and last name of each sales rep who represents at least one customer with a credit limit of **$500**
+Reason: Expected:
++--------+------------+-----------+
+| REP_ID | FIRST_NAME | LAST_NAME |
++--------+------------+-----------+
+|   05   |   Susan    |  Garcia   |
+|   10   |  Richard   |  Miller   |
+|   15   |   Donna    |   Smith   |
++--------+------------+-----------+
+Found:
++--------+------------+-----------+---------+
+| REP_ID | FIRST_NAME | LAST_NAME | CUST_ID |
++--------+------------+-----------+---------+
+|   05   |   Susan    |  Garcia   |   125   |
+|   15   |   Donna    |   Smith   |   227   |
+|   10   |  Richard   |  Miller   |   294   |
+|   10   |  Richard   |  Miller   |   492   |
+|   15   |   Donna    |   Smith   |   616   |
+|   05   |   Susan    |  Garcia   |   795   |
++--------+------------+-----------+---------+
+Error : AssertionError - 
+Timestamp: 2025-04-11 17:42:35.755070
