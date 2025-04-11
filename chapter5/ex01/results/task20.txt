@@ -1,34 +1,6 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: **Task 20:** Repeat *Task 18* using the `ANY` operator
-Reason: Expected:
-+---------+-------------------------------+--------+----------+
-| ITEM_ID |          DESCRIPTION          | PRICE  | CATEGORY |
-+---------+-------------------------------+--------+----------+
-|  AD72   |      Dog Feeding Station      | 79.99  |   DOG    |
-|  BC33   | Feathers Bird Cage (12x24x18) | 79.99  |   BRD    |
-|  FS42   |     Aquarium (55 Gallon)      | 124.99 |   FSH    |
-|  LD14   |    Locking Small Dog Door     | 49.99  |   DOG    |
-|  LP73   |       Large Pet Carrier       | 59.99  |   DOG    |
-|  PF19   |       Pump & Filter Kit       | 74.99  |   FSH    |
-|  QB92   |    Quilted Stable Blanket     | 119.99 |   HOR    |
-|  UF39   |   Underground Fence System    | 199.99 |   DOG    |
-|  WB49   |    Insulated Water Bucket     | 79.99  |   HOR    |
-+---------+-------------------------------+--------+----------+
-Found:
-+---------+-------------------------------+----------+
-| ITEM_ID |          DESCRIPTION          | CATEGORY |
-+---------+-------------------------------+----------+
-|  AD72   |      Dog Feeding Station      |   DOG    |
-|  BC33   | Feathers Bird Cage (12x24x18) |   BRD    |
-|  FS42   |     Aquarium (55 Gallon)      |   FSH    |
-|  LD14   |    Locking Small Dog Door     |   DOG    |
-|  LP73   |       Large Pet Carrier       |   DOG    |
-|  PF19   |       Pump & Filter Kit       |   FSH    |
-|  QB92   |    Quilted Stable Blanket     |   HOR    |
-|  UF39   |   Underground Fence System    |   DOG    |
-|  WB49   |    Insulated Water Bucket     |   HOR    |
-+---------+-------------------------------+----------+
-Error : AssertionError - 
-Timestamp: 2025-04-11 23:56:29.534400
+Reason: The query returned the expected results.None
+Timestamp: 2025-04-11 23:57:24.158750
