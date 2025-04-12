@@ -24,18 +24,19 @@ Found:
 +--------+-----------+----------+---------+----------------+---------------+
 | REP_ID | REP_FIRST | REP_LAST | CUST_ID | CUSTOMER_FIRST | CUSTOMER_LAST |
 +--------+-----------+----------+---------+----------------+---------------+
-|   05   |   Susan   |  Garcia  |   125   |      Joey      |     Smith     |
-|   05   |   Susan   |  Garcia  |   375   |    Melanie     |    Jackson    |
-|   05   |   Susan   |  Garcia  |   543   |     Angie      |   Hendricks   |
 |   05   |   Susan   |  Garcia  |   795   |     Randy      |  Blacksmith   |
-|   10   |  Richard  |  Miller  |   182   |     Billy      |    Rufton     |
-|   10   |  Richard  |  Miller  |   294   |    Samantha    |     Smith     |
-|   10   |  Richard  |  Miller  |   492   |     Elmer      |    Jackson    |
+|   05   |   Susan   |  Garcia  |   543   |     Angie      |   Hendricks   |
+|   05   |   Susan   |  Garcia  |   375   |    Melanie     |    Jackson    |
+|   05   |   Susan   |  Garcia  |   125   |      Joey      |     Smith     |
 |   10   |  Richard  |  Miller  |   721   |     Leslie     |     Smith     |
-|   15   |   Donna   |  Smith   |   227   |     Sandra     |    Pincher    |
-|   15   |   Donna   |  Smith   |   314   |      Tom       |    Rascal     |
-|   15   |   Donna   |  Smith   |   435   |     James      |   Gonzalez    |
+|   10   |  Richard  |  Miller  |   492   |     Elmer      |    Jackson    |
+|   10   |  Richard  |  Miller  |   294   |    Samantha    |     Smith     |
+|   10   |  Richard  |  Miller  |   182   |     Billy      |    Rufton     |
 |   15   |   Donna   |  Smith   |   616   |     Sally      |     Cruz      |
+|   15   |   Donna   |  Smith   |   435   |     James      |   Gonzalez    |
+|   15   |   Donna   |  Smith   |   314   |      Tom       |    Rascal     |
+|   15   |   Donna   |  Smith   |   227   |     Sandra     |    Pincher    |
+|   20   |  Daniel   | Jackson  |  NULL   |      NULL      |     NULL      |
 +--------+-----------+----------+---------+----------------+---------------+
 Error : AssertionError - 
-Timestamp: 2025-04-12 00:08:57.508139
+Timestamp: 2025-04-12 00:10:10.169454
