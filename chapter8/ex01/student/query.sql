@@ -1,1 +1,3 @@
--- Write your query here
+SELECT ITEM_ID, UPPER(DESCRIPTION)
+AS ITEM_DESC
+FROM ITEM;
