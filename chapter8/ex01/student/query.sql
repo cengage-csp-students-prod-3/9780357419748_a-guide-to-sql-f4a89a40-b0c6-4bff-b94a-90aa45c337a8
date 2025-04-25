@@ -24,3 +24,5 @@ BEGIN
 END //
 
 DELIMITER ;
+CALL KimTay.GET_CREDIT_LIMIT(your_customer_id, @customer_name, @credit_limit);
+SELECT @customer_name AS CustomerName, @credit_limit AS CreditLimit;
