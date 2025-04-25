@@ -1,40 +1,6 @@
 
-Status: FAILED!
+Status: PASSED!
 Check: 1
 Test: **Task 3:** List the customer ID, first and last names, and balance for all customers
-Reason: Expected:
-+---------+------------+------------+---------+
-| CUST_ID | FIRST_NAME | LAST_NAME  | BALANCE |
-+---------+------------+------------+---------+
-|   125   |    Joey    |   Smith    |   81    |
-|   182   |   Billy    |   Rufton   |   43    |
-|   227   |   Sandra   |  Pincher   |   156   |
-|   294   |  Samantha  |   Smith    |   59    |
-|   314   |    Tom     |   Rascal   |   17    |
-|   375   |  Melanie   |  Jackson   |   252   |
-|   435   |   James    |  Gonzalez  |   230   |
-|   492   |   Elmer    |  Jackson   |   45    |
-|   543   |   Angie    | Hendricks  |   315   |
-|   616   |   Sally    |    Cruz    |    8    |
-|   721   |   Leslie   |   Smith    |   167   |
-|   795   |   Randy    | Blacksmith |   62    |
-+---------+------------+------------+---------+
-Found:
-+---------+------------+------------+------------------+
-| CUST_ID | FIRST_NAME | LAST_NAME  | ROUND(BALANCE,0) |
-+---------+------------+------------+------------------+
-|   125   |    Joey    |   Smith    |        81        |
-|   182   |   Billy    |   Rufton   |        43        |
-|   227   |   Sandra   |  Pincher   |       156        |
-|   294   |  Samantha  |   Smith    |        59        |
-|   314   |    Tom     |   Rascal   |        17        |
-|   375   |  Melanie   |  Jackson   |       252        |
-|   435   |   James    |  Gonzalez  |       230        |
-|   492   |   Elmer    |  Jackson   |        45        |
-|   543   |   Angie    | Hendricks  |       315        |
-|   616   |   Sally    |    Cruz    |        8         |
-|   721   |   Leslie   |   Smith    |       167        |
-|   795   |   Randy    | Blacksmith |        62        |
-+---------+------------+------------+------------------+
-Error : AssertionError - 
-Timestamp: 2025-04-25 18:10:00.675366
+Reason: The query returned the expected results.None
+Timestamp: 2025-04-25 18:10:56.336246
