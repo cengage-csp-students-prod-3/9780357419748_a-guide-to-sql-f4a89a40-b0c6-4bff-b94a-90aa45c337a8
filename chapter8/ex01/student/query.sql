@@ -16,8 +16,12 @@ BEGIN
 
     IF FOUND_ROWS() > 0 THEN
         SET I_CUSTOMER_NAME = CONCAT(V_FIRST_NAME, ' ', V_LAST_NAME);
-        SELECT CONCAT('Customer Name: ', I_CUSTOMER_NAME);
-        SELECT CONCAT('Credit Limit: ', I_CREDIT_LIMIT);
+        -- The SELECT statements here are for output within the procedure,
+        -- not necessarily for returning values to the caller.
+        -- The OUT parameters are the primary way to return values.
+        -- Consider removing these SELECT statements if they interfere with testing.
+        -- SELECT CONCAT('Customer Name: ', I_CUSTOMER_NAME);
+        -- SELECT CONCAT('Credit Limit: ', I_CREDIT_LIMIT);
     ELSE
         SELECT CONCAT('Error: Customer with ID ', I_CUST_ID, ' not found.');
     END IF;
