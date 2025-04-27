@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 6:** Create the `GET_INVOICE_DATE` procedure
+Reason: The following error is preventing tests from completing: 1305 (42000): PROCEDURE KimTay.GET_INVOICE_DATE does not exist
+Error : ProgrammingError - 1305 (42000): PROCEDURE KimTay.GET_INVOICE_DATE does not exist
+Timestamp: 2025-04-27 17:40:03.525599
