@@ -1,0 +1,7 @@
+
+Status: FAILED!
+Check: 1
+Test: **Task 7:** Create the `ADD_INVOICE` procedure to add rows to the `INVOICE` table
+Reason: The following error is preventing tests from completing: 1305 (42000): PROCEDURE KimTay.ADD_INVOICE does not exist
+Error : ProgrammingError - 1305 (42000): PROCEDURE KimTay.ADD_INVOICE does not exist
+Timestamp: 2025-04-27 17:42:18.390861
