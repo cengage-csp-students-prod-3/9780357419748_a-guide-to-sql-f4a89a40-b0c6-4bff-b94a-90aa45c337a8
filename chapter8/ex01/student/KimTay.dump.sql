@@ -47,6 +47,25 @@ LOCK TABLES `CUSTOMER` WRITE;
 INSERT INTO `CUSTOMER` VALUES ('125','Joey','Smith','17 Fourth St','Cody','WY','82414','jsmith17@example.com',80.68,500.00,'05'),('182','Billy','Rufton','21 Simple Cir','Garland','WY','82435','billyruff@example.com',43.13,750.00,'10'),('227','Sandra','Pincher','53 Verde Ln','Powell','WY','82440','spinch2@example.com',156.38,500.00,'15'),('294','Samantha','Smith','14 Rock Ln','Ralston','WY','82440','ssmith5@example.com',58.60,500.00,'10'),('314','Tom','Rascal','1 Rascal Farm Rd','Cody','WY','82414','trascal3@example.com',17.25,250.00,'15'),('375','Melanie','Jackson','42 Blackwater Way','Elk Butte','WY','82433','mjackson5@example.com',252.25,250.00,'05'),('435','James','Gonzalez','16 Rockway Rd','Wapiti','WY','82450','jgonzo@example.com',230.40,1000.00,'15'),('492','Elmer','Jackson','22 Jackson Farm Rd','Garland','WY','82435','ejackson4@example.com',45.20,500.00,'10'),('543','Angie','Hendricks','27 Locklear Ln','Powell','WY','82440','ahendricks7@example.com',315.00,750.00,'05'),('616','Sally','Cruz','199 18th Ave','Ralston','WY','82440','scruz5@example.com',8.33,500.00,'15'),('721','Leslie','Smith','123 Sheepland Rd','Elk Butte','WY','82433','lsmith12@example.com',166.65,1000.00,'10'),('795','Randy','Blacksmith','75 Stream Rd','Cody','WY','82414','rblacksmith6@example.com',61.50,500.00,'05');
 /*!40000 ALTER TABLE `CUSTOMER` ENABLE KEYS */;
 UNLOCK TABLES;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+/*!50003 CREATE*/ /*!50017 DEFINER=`root`@`localhost`*/ /*!50003 TRIGGER `ADD_COMMISSION_TRIG` AFTER INSERT ON `CUSTOMER` FOR EACH ROW BEGIN
+    UPDATE SALES_REP
+    SET COMMISSION = COMMISSION + (NEW.BALANCE * (SELECT RATE FROM SALES_REP WHERE REP_ID = NEW.REP_ID))
+    WHERE REP_ID = NEW.REP_ID;
+END */;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 
 --
 -- Table structure for table `INVOICES`
@@ -307,4 +326,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-27 17:47:39
+-- Dump completed on 2025-04-27 17:49:12
