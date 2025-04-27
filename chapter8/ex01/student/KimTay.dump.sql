@@ -194,6 +194,39 @@ DELIMITER ;
 /*!50003 SET character_set_client  = @saved_cs_client */ ;
 /*!50003 SET character_set_results = @saved_cs_results */ ;
 /*!50003 SET collation_connection  = @saved_col_connection */ ;
+/*!50003 DROP PROCEDURE IF EXISTS `GET_INVOICE_DATE` */;
+/*!50003 SET @saved_cs_client      = @@character_set_client */ ;
+/*!50003 SET @saved_cs_results     = @@character_set_results */ ;
+/*!50003 SET @saved_col_connection = @@collation_connection */ ;
+/*!50003 SET character_set_client  = latin1 */ ;
+/*!50003 SET character_set_results = latin1 */ ;
+/*!50003 SET collation_connection  = latin1_swedish_ci */ ;
+/*!50003 SET @saved_sql_mode       = @@sql_mode */ ;
+/*!50003 SET sql_mode              = 'ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION' */ ;
+DELIMITER ;;
+CREATE DEFINER=`root`@`localhost` PROCEDURE `GET_INVOICE_DATE`(IN I_INVOICE_NUM CHAR(5))
+BEGIN
+  DECLARE I_CUST_ID CHAR(3);
+  DECLARE I_CUST_NAME VARCHAR(50);
+  DECLARE I_INVOICE_DATE DATE;
+
+  SELECT CUST_ID, INVOICE_DATE
+  INTO I_CUST_ID, I_INVOICE_DATE
+  FROM INVOICES
+  WHERE INVOICE_NUM = I_INVOICE_NUM;
+
+  SELECT CONCAT(FIRST_NAME, ' ', LAST_NAME)
+  INTO I_CUST_NAME
+  FROM CUSTOMER
+  WHERE CUST_ID = I_CUST_ID;
+
+  SELECT I_CUST_ID, I_CUST_NAME, I_INVOICE_DATE;
+END ;;
+DELIMITER ;
+/*!50003 SET sql_mode              = @saved_sql_mode */ ;
+/*!50003 SET character_set_client  = @saved_cs_client */ ;
+/*!50003 SET character_set_results = @saved_cs_results */ ;
+/*!50003 SET collation_connection  = @saved_col_connection */ ;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -204,4 +237,4 @@ DELIMITER ;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2025-04-27 17:39:31
+-- Dump completed on 2025-04-27 17:40:50
